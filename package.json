@@ -1,6 +1,6 @@
 {
   "name": "zonefile-parser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "zonefile DNS configuration parser",
   "main": "fast.js",
   "bin": {
@@ -31,8 +31,7 @@
     "url": "https://github.com/tableflip/zonefile-parser/issues"
   },
   "homepage": "https://github.com/tableflip/zonefile-parser#readme",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "npm-run-all": "^1.4.0",
     "pegjs": "^0.9.0",
