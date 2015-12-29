@@ -1,0 +1,41 @@
+{
+  "name": "zonefile-parser",
+  "version": "1.0.0",
+  "description": "zonefile DNS configuration parser",
+  "main": "fast.js",
+  "bin": {
+    "zonefile": "bin/zonefile.js"
+  },
+  "scripts": {
+    "test": "say sorry && exit 1",
+    "build": "npm-run-all build:*",
+    "build:small": "pegjs --extra-options '{ \"optimize\": \"size\" }' node_modules/zonefile-pegjs/zonefile.pegjs small.js",
+    "build:fast": "pegjs --extra-options '{ \"optimize\": \"speed\" }' node_modules/zonefile-pegjs/zonefile.pegjs fast.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tableflip/zonefile-parser.git"
+  },
+  "keywords": [
+    "dns",
+    "zonefile",
+    "parser",
+    "peg",
+    "soa",
+    "srv",
+    "txt"
+  ],
+  "author": "olizilla <oli@tableflip.io> (https://tableflip.io)",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/tableflip/zonefile-parser/issues"
+  },
+  "homepage": "https://github.com/tableflip/zonefile-parser#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "npm-run-all": "^1.4.0",
+    "pegjs": "^0.9.0",
+    "zonefile-pegjs": "1.0.0"
+  }
+}
